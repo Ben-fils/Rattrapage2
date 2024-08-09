@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background: url(Images/pexels-alex-green-5699456\ \(1\).jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section02
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info02
+{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact-info02 i
+{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form02
+{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info02, .contact-form02
+{
+    flex: 1;
+}
+
+.contact-form02 h2
+{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form02 .text-box02
+{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form02 .text-box02:first-child
+{
+    margin-right: 15px;
+}
+
+.contact-form02 textarea
+{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form02 .send-btn02
+{
+    float: right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    transition-property: background;
+}
+
+.contact-form02 .send-btn02:hover
+{
+    background: #07497c;
+    letter-spacing: 3px;
+    color: #000;
+    background: transparent;
+    border: 2px solid #000;
+}
+
+/* partie responsive */
+
+@media screen and (max-width: 950px){
+    .contact-section02
+    {
+        flex-direction: column;
+    }
+
+    .contact-info02, .contact-form02
+    {
+        margin: 50px 40px;
+    }
+
+    .contact-form02 h2 
+    {
+        font-size: 30px;
+    }
+
+    .contact-form02 .text-box02
+    {
+        width: 100%;
+    }
+}
